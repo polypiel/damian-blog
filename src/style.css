@@ -1,0 +1,21 @@
+/*
+Theme Name: Damian blog
+Theme URI:
+Description: Theme for Damian's blog
+Author: Angel Calvo & Damian Flores
+Author URI:
+Template: twentytwelve
+Version: 1.0
+Tags: 
+License:
+License URI:
+
+No comments.
+*/
+
+@import url("../twentytwelve/style.css");
+
+body {
+  background-color: #f1f096;
+  color: #e75641;
+}
