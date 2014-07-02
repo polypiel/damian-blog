@@ -15,7 +15,217 @@ No comments.
 
 @import url("../twentytwelve/style.css");
 
-body {
-  background-color: #f1f096;
+/* fonts */
+@font-face {
+  font-family: dine;
+  src: url('fonts/dine1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: wingdings;
+  src: url('fonts/wingdings.ttf') format('truetype'),
+	url('fonts/wingdings.eot') format('eot'),
+	url('fonts/wingdings.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.site {
+    max-width: 57.142857rem; /* 800px */
+}
+
+/* header */
+.site-header {
+  text-transform: uppercase;
+}
+
+/* menu */
+#menu-menu-1 {
+  border: none;
+  text-align: center;
+  margin: 1rem auto;
+}
+.main-navigation li {
+    font-family: wingdings;
+    text-align: center;
+    width: 3rem;
+}
+
+/* articles */
+.site-content article {
+  border: none;
+}
+
+/* footer */
+footer[role="contentinfo"] {
+  border: none;
+}
+
+/* tags */
+a[rel="tag"] {
+  font-family: wingdings;
+}
+
+/* Font sizes */
+.site-header h1 {
+  font-size: 5rem;
+  font-size: 60px;
+}
+.site-header h2 {
+  font-size: 2.25rem;
+  font-size: 27px;
+}
+.main-navigation li a {
+  font-size: 3rem;
+  font-size: 36px;
+}
+.entry-header,
+.entry-title,
+.meta-nav {
+  font-size: 2rem;
+  font-size: 24px;
+}
+.entry-content,
+.wd-sep,
+.archive-title {
+  font-size: 1.5rem;
+  font-size: 18px;
+}
+footer.entry-meta,
+.entry-meta,
+#colophon {
+  font-size: 1.25rem;
+  font-size: 15px;
+}
+
+/* post */
+.wd-image {
+  font-family: wingdings;
+  margin-bottom: 3rem;
+}
+.wd-image-1 {
+  font-size: 20rem;
+  font-size: 240px;
+}
+.wd-image-3 {
+  font-size: 6rem;
+  font-size: 72px;
+}
+
+/* misc */
+.font-wd,
+.meta-nav,
+.archive-title span {
+  font-family: wingdings;
+}
+.footer-sep {
+  margin: auto 0.5rem;
+}
+
+#wd-warning {
+  display: none;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.25rem;
+  font-size: 16px;
+}
+
+.wd-sep {
+  /*width: 1000%;*/
+  font-family: wingdings;
+  overflow: hidden;
+  text-overflow: "";
+  text-transform: normal;
+  text-align: center;
+}
+
+/* Responsive */
+@media all and (max-width: 600px) {
+  .site-info {
+	text-align: left !important;
+  }
+  .site-info-grp {
+	display: block;
+  }
+  .footer-sep {
+	display: none;
+  }
+  .main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {
+    display: inline-block;
+  }
+  .main-navigation li a, .main-navigation li {
+	display: inline-block;
+  }
+}
+
+/* Tweaks parent style */
+body.custom-font-enabled {
+  font-family: dine, sans-serif;
+}
+
+a,
+a:visited,
+body,
+body.custom-background,
+#page,
+.site-header h1 a, 
+.site-header h2,
+.site-header h2 a,
+.entry-meta,
+footer.entry-meta,
+.main-navigation li a,
+a[rel="tag"],
+footer[role="contentinfo"] a,
+.comments-link a, 
+.entry-meta a,
+.archive-title,
+.archive-meta {
   color: #e75641;
+}
+
+#page {
+  background-color: #f1f096;
+}
+
+a:hover,
+.site-header h1 a:hover, 
+.site-header h2 a:hover,
+.main-navigation li a:hover,
+footer.entry-meta a:hover,
+footer[role="contentinfo"] a:hover,
+.entry-header .entry-title a:hover {
+  text-decoration: underline;
+  color: #e75641;
+}
+
+a,
+a[rel="tag"],
+footer[role="contentinfo"] a {
+  text-decoration: none;
+}
+
+body .site {
+  box-shadow: none;
+  margin-top: 1rem;
+}
+
+.site-header h1, 
+.site-header h2 {
+    text-align: center;
+}
+
+.site-info {
+  text-align: center;
+}
+
+.main-navigation li a {
+  line-height: 3rem;
+}
+
+.archive-header, 
+.page-header {
+	border: none;
 }
